@@ -1,0 +1,14 @@
+prefix=/home/zhoudezhi/_3rdlib
+exec_prefix=${prefix}
+libdir=/home/zhoudezhi/_3rdlib/lib
+includedir=/home/zhoudezhi/_3rdlib/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.65.101
+Requires: libavcodec >= 58.117.101, libavutil >= 56.63.101
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm
+Libs.private: 
+Cflags: -I${includedir}

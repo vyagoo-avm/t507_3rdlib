@@ -1,0 +1,14 @@
+prefix=/home/zhoudezhi/_3rdlib
+exec_prefix=${prefix}
+libdir=/home/zhoudezhi/_3rdlib/lib
+includedir=/home/zhoudezhi/_3rdlib/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.117.101
+Requires: libavutil >= 56.63.101
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

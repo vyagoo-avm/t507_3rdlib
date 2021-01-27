@@ -1,0 +1,14 @@
+prefix=/home/zhoudezhi/_3rdlib
+exec_prefix=${prefix}
+libdir=/home/zhoudezhi/_3rdlib/lib
+includedir=/home/zhoudezhi/_3rdlib/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.63.101
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
